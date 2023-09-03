@@ -25,7 +25,8 @@ export default async function TopicList() {
     return (
         <div>
             {topics.map((topic) => (
-                <div className= {`border-2 border-solid border-black p-2 my-2 ${topic.isCompleted?"bg-green-200":""}`}>
+                <div className={`block my-2 p-6 rounded-lg shadow  border-gray-700 text-white ${topic.isCompleted?"bg-emerald-700 hover:bg-emerald-700":"bg-gray-800 hover:bg-gray-700"} `}>
+                {/* <div className= {`border-2 border-solid border-black p-2 my-2 ${topic.isCompleted?"bg-green-200":""}`}> */}
                     <div className="flex flex-row justify-between items-center">
                         <h2 className="text-xl font-bold">{topic.title}</h2>
                         <div className="flex flex-row px-3 py-3 space-x-3">

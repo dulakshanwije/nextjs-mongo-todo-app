@@ -44,7 +44,7 @@ export default function AddTopic() {
                 value={description}
                 onChange={(e) => setDesc(e.target.value)}
             />
-            <ConfirmButton value= {loading?"Loading...":"Add"} onClick={handleSubmit} />
+            <ConfirmButton value= {loading?"Loading...":"Add NOTE"} onClick={handleSubmit} />
         </div>
     );
 }
